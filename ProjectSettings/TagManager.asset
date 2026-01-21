@@ -3,16 +3,20 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Button
+  - DoorTrigger
+  - Door
+  - Lever
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - LayerMask
   - Water
   - UI
-  - 
-  - 
+  - DoorTrigger
+  - Interactuable
   - 
   - 
   - 
