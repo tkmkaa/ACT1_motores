@@ -8,6 +8,8 @@ TagManager:
   - DoorTrigger
   - Door
   - Lever
+  - Pared
+  - Matar
   layers:
   - Default
   - TransparentFX
