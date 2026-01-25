@@ -13,7 +13,7 @@ public class BolaCae : MonoBehaviour
         rb = GetComponent<Rigidbody>();
     }
 
-    void OnCollisionStay(Collision collision)
+    void OnCollisionEnter(Collision collision)
     {
         // Si toca al jugador → muere y la bola desaparece
         if (collision.collider.CompareTag("Player"))
@@ -21,10 +21,7 @@ public class BolaCae : MonoBehaviour
             collision.gameObject.GetComponent<Respawn>()?.Respawnear();
 
             BolaCae[] todasBolas = FindObjectsOfType<BolaCae>();
-            foreach (BolaCae bola in todasBolas)
-            {
-                Destroy(bola.gameObject);
-            }
+            
 
             return;
         }
